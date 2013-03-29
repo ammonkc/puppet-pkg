@@ -22,6 +22,7 @@ class pkg::utils (
         'iftop',
         'wget',
         'curl',
+        'zsh',
         'nmap',
         'strace'
     ]
