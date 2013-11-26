@@ -11,9 +11,7 @@
 #
 # Sample Usage:
 #
-class pkg::utils (
-
-) inherits pkg::params {
+class pkg::utils inherits pkg::params {
     # utilities to install
     $util_pkgs = [
         'git',
