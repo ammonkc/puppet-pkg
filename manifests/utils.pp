@@ -21,8 +21,8 @@ class pkg::utils inherits pkg::params {
         'wget',
         'curl',
         'zsh',
-        'nmap',
-        'strace'
+        'tree',
+        'bc'
     ]
     # install packages
     package { $util_pkgs:
