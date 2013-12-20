@@ -8,8 +8,10 @@
 #  pkg::install { 'pecl-apc': }
 #
 define pkg::install ( $ensure = installed ) {
-  package { $title:
-    ensure => $ensure,
-  }
+    if ! defined(Package[$title]) {
+        package { $title:
+            ensure => $ensure,
+        }
+    }
 }
 
